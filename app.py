@@ -10,9 +10,9 @@ def convert_text_to_speech(text):
     else:
         return "An Error Occured During conversion"
     
-iface = gr.inferface(
+iface = gr.Interface(
     fn = convert_text_to_speech,
-    input ="text",
-    output = 'text',
+    inputs ="text",
+    outputs = 'text',
 )
 iface.launch()
